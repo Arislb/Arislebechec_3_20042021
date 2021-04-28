@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Chemin au style css -->
     <link rel="stylesheet" href="/public/css/style.css" />
+    <!-- Link dédié a la police -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <!--Link dédié aux icones-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
   </head>
-  <body>
+  <body id="body">
     <!--CORPS SITE: Page d'accueil -->
     <div>
       <header class="box-header">
@@ -20,13 +29,16 @@
       </header>
       <main>
         <section class="box-information"></section>
-        <p>Paris,Belleville</p>
+        <form>
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Paris,Belleville</p>
+        </form>
         <div>
           <h2>Réservez le menu qui vous convient</h2>
           <p>
             Découvrez des restaurants d'exception,sélectionnés par nos soins.
           </p>
-          <button></button>
+          <button class="btn">Explorer nos restaurants</button>
         </div>
         <section class="box-fonctionnement">
           <h2>Fonctionnement</h2>
@@ -41,16 +53,16 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="boxfooter">
         <h3>Ohmyfood</h3>
-        <nav>
+        <div class="boxfooter_nav">
           <ul>
             <li>Proposer un restaurant</li>
             <li>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li>Contact</li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
   </body>
