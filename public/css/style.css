@@ -8,6 +8,10 @@
   color: black;
 }
 
+figure {
+  margin: 0;
+}
+
 .box-header {
   font-family: Shrikhand;
   text-align: center;
@@ -23,9 +27,21 @@
   background: #ff79da;
 }
 
+.box-restaurants div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.box-restaurants div a {
+  display: block;
+}
+
 .carte {
   background: white;
-  width: auto;
+  height: 10rem;
+  width: 90%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -36,6 +52,7 @@
   border-radius: 20px 20px 0 0;
 }
 .carte figcaption {
+  width: 100%;
   padding: 0.5rem;
 }
 
