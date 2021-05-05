@@ -1,6 +1,6 @@
 .box-information {
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: $color-background;
   width: 100%;
 
   .lieu {
@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     height: 3rem;
-    background: rgb(234, 234, 234);
+    background: $color-background2;
     box-shadow: 0px 5px 5px rgb(0 0 0 / 30%) inset;
     p {
       padding-left: 1rem;
@@ -25,6 +25,39 @@
 
     p {
       margin: 0;
+    }
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+  padding: 0;
+
+  li::before {
+    content: counter(li);
+    color: white;
+    background-color: $color-primaire;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -1em;
+  }
+
+  li {
+    counter-increment: li;
+    background: $color-background;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem 0rem 1rem 0.6rem;
+
+    i {
+      padding: 0rem 1rem 0rem 1rem;
     }
   }
 }
