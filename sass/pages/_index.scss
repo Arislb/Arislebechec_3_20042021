@@ -29,6 +29,10 @@
   }
 }
 
+.box-fonctionnement {
+  padding: 1.313rem;
+}
+
 ol {
   list-style: none;
   counter-reset: li;
@@ -42,9 +46,9 @@ ol {
     align-items: center;
     justify-content: center;
     border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
-    margin-left: -1em;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: -0.7rem;
   }
 
   li {
@@ -53,15 +57,19 @@ ol {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    margin: 1rem;
-    padding: 1rem 0rem 1rem 0.6rem;
+    margin-top: 1rem;
+    height: 4.5rem;
+    /* padding: 1rem 0rem 1rem 0.6rem; */
 
     i {
-      padding: 0rem 1rem 0rem 1rem;
+      padding: 0rem 1.5rem 0rem 1.5rem;
+      color: grey;
     }
   }
 }
 
 .box-restaurants {
   background-color: #f6f6f6;
+  padding: 1.313rem;
+  padding-bottom: 3.938rem;
 }

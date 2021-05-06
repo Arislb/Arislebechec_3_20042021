@@ -41,7 +41,7 @@ figure {
 
 .carte {
   background: white;
-  width: 90%;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -54,6 +54,9 @@ figure {
 .carte figcaption {
   height: 2.6rem;
   padding: 1rem;
+}
+.carte figcaption p {
+  margin: 0;
 }
 
 .box-information {
@@ -85,6 +88,10 @@ figure {
   margin: 0;
 }
 
+.box-fonctionnement {
+  padding: 1.313rem;
+}
+
 ol {
   list-style: none;
   counter-reset: li;
@@ -98,9 +105,9 @@ ol li::before {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  width: 2rem;
-  height: 2rem;
-  margin-left: -1em;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: -0.7rem;
 }
 ol li {
   counter-increment: li;
@@ -108,28 +115,44 @@ ol li {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  margin: 1rem;
-  padding: 1rem 0rem 1rem 0.6rem;
+  margin-top: 1rem;
+  height: 4.5rem;
+  /* padding: 1rem 0rem 1rem 0.6rem; */
 }
 ol li i {
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  color: grey;
 }
 
 .box-restaurants {
   background-color: #f6f6f6;
+  padding: 1.313rem;
+  padding-bottom: 3.938rem;
 }
 
 .boxfooter {
   background-color: #5a5a5a;
   color: white;
+  padding: 1.313rem;
 }
 .boxfooter h3 {
   font-family: Shrikhand;
-  font-size: small;
+  font-size: 20px;
+  letter-spacing: 0.011em;
+  font-weight: 300;
+  margin: 0;
 }
 .boxfooter .boxfooter_nav ul {
   padding: 0;
+  margin: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.boxfooter .boxfooter_nav ul li i {
+  width: 20px;
+  padding-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

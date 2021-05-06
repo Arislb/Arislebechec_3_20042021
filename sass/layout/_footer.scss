@@ -1,12 +1,25 @@
 .boxfooter {
   background-color: #5a5a5a;
   color: white;
+  padding: 1.313rem;
   h3 {
     font-family: Shrikhand;
-    font-size: small;
+    font-size: 20px;
+    letter-spacing: 0.011em;
+    font-weight: 300;
+    margin: 0;
   }
   .boxfooter_nav ul {
     padding: 0;
+    margin: 0;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    li i {
+      width: 20px;
+      padding-right: 0.5rem;
+    }
   }
 }
