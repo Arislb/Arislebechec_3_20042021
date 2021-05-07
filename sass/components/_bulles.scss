@@ -1,0 +1,17 @@
+.menu-bulle {
+  background: white;
+  width: 100%;
+  height: 4rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  b {
+    padding-left: 0.5rem;
+  }
+  p {
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+}
