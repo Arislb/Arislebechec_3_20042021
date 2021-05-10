@@ -28,7 +28,7 @@ p {
   /*  box-shadow: 0px 4px 9px rgb(0 0 0 / 15%); */
   /* box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
-  background: #ff79da;
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .box-restaurants div {

@@ -6,7 +6,7 @@
   color: white;
   border: none;
   @include box-shadow;
-  background: $color-secondaire;
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .box-restaurants {
