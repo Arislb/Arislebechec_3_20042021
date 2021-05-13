@@ -18,6 +18,45 @@ p {
   text-align: center;
 }
 
+.carte {
+  background: white;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  /*  box-shadow: 0px 4px 9px rgb(0 0 0 / 15%); */
+  /* box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.carte img {
+  object-fit: cover;
+  width: 100%;
+  height: 12.5rem;
+  border-radius: 20px 20px 0 0;
+}
+.carte figcaption {
+  height: 2.6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.carte figcaption p {
+  margin: 0;
+}
+.carte figcaption i {
+  font-size: 1.5rem;
+}
+
+.stickers {
+  position: absolute;
+  right: 0;
+  background: #99e2d0;
+  color: #359c83;
+  font-weight: 500;
+  padding: 0.33rem;
+  border-radius: 3%;
+  margin: 1rem;
+}
+
 .btn {
   border-radius: 30px;
   width: 12rem;
@@ -42,28 +81,25 @@ p {
   display: block;
 }
 
-.carte {
+/* .carte {
   background: white;
   width: 100%;
   border-radius: 20px;
-  /*  box-shadow: 0px 4px 9px rgb(0 0 0 / 15%); */
-  /* box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
-}
-.carte img {
-  object-fit: cover;
-  width: 100%;
-  height: 12.5rem;
-  border-radius: 20px 20px 0 0;
-}
-.carte figcaption {
-  height: 2.6rem;
-  padding: 1rem;
-}
-.carte figcaption p {
-  margin: 0;
-}
-
+  @include box-shadow;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 12.5rem;
+    border-radius: 20px 20px 0 0;
+  }
+  figcaption {
+    height: 2.6rem;
+    padding: 1rem;
+    p {
+      margin: 0;
+    }
+  }
+} */
 .menu-bulle {
   background: white;
   width: 100%;
