@@ -149,13 +149,6 @@ p {
 .carte figcaption p {
   margin: 0;
 }
-.carte figcaption i {
-  font-weight: 200;
-  font-size: 1.5rem;
-}
-.carte figcaption i:checked {
-  font-weight: 700;
-}
 
 .stickers {
   position: absolute;
@@ -234,6 +227,44 @@ p {
   padding: 0 1.5rem 0.8rem 0.6rem;
 }
 
+/*----------------------------------------------------Premier-jet------------------------------------------*/
+[id=toggle-heart] {
+  position: absolute;
+  left: -100vw;
+}
+
+/* Valeur avant le check */
+[for=toggle-heart] {
+  color: black;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+[for=toggle-heart] .testr {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: scaleY(0);
+}
+
+/* valeur une fois clic */
+[id=toggle-heart]:checked + label i {
+  opacity: 0;
+}
+[id=toggle-heart]:checked + label .testr {
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 500ms cubic-bezier(0.32, 0, 0.07, 1);
+  background: linear-gradient(184deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*----------------------------------------------------Premier-jet------------------------------------------*/
 .box-information {
   text-align: center;
   background-color: #f6f6f6;
