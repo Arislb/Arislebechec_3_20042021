@@ -1,4 +1,11 @@
 .box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   font-family: Shrikhand;
   text-align: center;
+  a {
+    font-size: x-large;
+    text-align: center;
+  }
 }

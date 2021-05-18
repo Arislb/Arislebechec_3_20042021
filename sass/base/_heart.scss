@@ -1,11 +1,17 @@
 /*----------------------------------------------------Premier-jet------------------------------------------*/
-[id="toggle-heart"] {
+[id="toggle-heart"],
+[id="toggle-heart2"],
+[id="toggle-heart3"],
+[id="toggle-heart4"] {
   position: absolute;
   left: -100vw;
 }
 
 /* Valeur avant le check */
-[for="toggle-heart"] {
+[for="toggle-heart"],
+[for="toggle-heart2"],
+[for="toggle-heart3"],
+[for="toggle-heart4"] {
   color: black;
   font-size: 1.5rem;
   position: relative;
@@ -20,7 +26,10 @@
   }
 }
 /* valeur une fois clic */
-[id="toggle-heart"]:checked + label {
+[id="toggle-heart"]:checked + label,
+[id="toggle-heart2"]:checked + label,
+[id="toggle-heart3"]:checked + label,
+[id="toggle-heart4"]:checked + label {
   i {
     opacity: 0;
   }

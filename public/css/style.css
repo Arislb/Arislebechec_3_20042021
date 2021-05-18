@@ -121,7 +121,14 @@ p {
 }
 
 .box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   font-family: Shrikhand;
+  text-align: center;
+}
+.box-header a {
+  font-size: x-large;
   text-align: center;
 }
 
@@ -228,19 +235,28 @@ p {
 }
 
 /*----------------------------------------------------Premier-jet------------------------------------------*/
-[id=toggle-heart] {
+[id=toggle-heart],
+[id=toggle-heart2],
+[id=toggle-heart3],
+[id=toggle-heart4] {
   position: absolute;
   left: -100vw;
 }
 
 /* Valeur avant le check */
-[for=toggle-heart] {
+[for=toggle-heart],
+[for=toggle-heart2],
+[for=toggle-heart3],
+[for=toggle-heart4] {
   color: black;
   font-size: 1.5rem;
   position: relative;
   z-index: 1;
 }
-[for=toggle-heart] .testr {
+[for=toggle-heart] .testr,
+[for=toggle-heart2] .testr,
+[for=toggle-heart3] .testr,
+[for=toggle-heart4] .testr {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -250,10 +266,16 @@ p {
 }
 
 /* valeur une fois clic */
-[id=toggle-heart]:checked + label i {
+[id=toggle-heart]:checked + label i,
+[id=toggle-heart2]:checked + label i,
+[id=toggle-heart3]:checked + label i,
+[id=toggle-heart4]:checked + label i {
   opacity: 0;
 }
-[id=toggle-heart]:checked + label .testr {
+[id=toggle-heart]:checked + label .testr,
+[id=toggle-heart2]:checked + label .testr,
+[id=toggle-heart3]:checked + label .testr,
+[id=toggle-heart4]:checked + label .testr {
   opacity: 1;
   transform: scaleY(1);
   transform-origin: bottom;
@@ -355,6 +377,8 @@ ol li i {
 }
 
 .titre-menu {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   margin-top: -2rem;
   padding: 2rem;
