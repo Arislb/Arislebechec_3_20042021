@@ -57,9 +57,11 @@
 @keyframes stop {
   90% {
     opacity: 1;
+    z-index: 10;
   }
   100% {
     opacity: 0;
     display: none;
+    z-index: -100;
   }
 }
