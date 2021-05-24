@@ -4,6 +4,7 @@
   height: 4rem;
   border-radius: 15px;
   display: flex;
+  overflow: hidden;
   @include box-shadow;
   &_description {
     align-self: center;
@@ -18,4 +19,27 @@
     align-self: flex-end;
     padding: 0 1.5rem 0.8rem 0.6rem;
   }
+}
+
+.platcheck {
+  background-color: $color-tertiaire;
+  border-radius: 0 15px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  margin-right: -4rem;
+  transition: margin-right 0.25s linear;
+  i {
+    color: white;
+    transition: transform 500ms ease-in-out;
+  }
+}
+
+.selection_plat:checked + .platcheck {
+  margin-right: 0;
+}
+
+.selection_plat:checked + .platcheck i {
+  transform: rotate(1turn);
 }
