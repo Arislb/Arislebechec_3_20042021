@@ -176,6 +176,33 @@ html {
     }
   }
 } */
+.pop-menu {
+  /*  animation: menu-bulle 1s forwards; */
+}
+
+.pop-menu li {
+  /* animation: menu-bulle 1s forwards; */
+  animation-name: menu-bulle;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.pop-menu li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.pop-menu li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.pop-menu li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
 .menu-bulle {
   background: white;
   width: 100%;
@@ -223,6 +250,20 @@ html {
   transform: rotate(1turn);
 }
 
+@keyframes menu-bulle {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /*----------------------------------------------------Premier-jet------------------------------------------*/
 [id=toggle-heart],
 [id=toggle-heart2],

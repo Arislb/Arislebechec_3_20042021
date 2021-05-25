@@ -1,3 +1,26 @@
+.pop-menu {
+  /*  animation: menu-bulle 1s forwards; */
+}
+.pop-menu li {
+  /* animation: menu-bulle 1s forwards; */
+  animation-name: menu-bulle;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.pop-menu li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.pop-menu li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.pop-menu li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
 .menu-bulle {
   background: rgb(255, 255, 255);
   width: 100%;
