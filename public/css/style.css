@@ -219,9 +219,14 @@ html {
   align-self: center;
   padding-left: 0.8rem;
   flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-bulle_description p {
   font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-bulle_prix {
   align-self: flex-end;
