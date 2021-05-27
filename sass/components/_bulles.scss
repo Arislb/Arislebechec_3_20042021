@@ -13,17 +13,18 @@
       animation-delay: 0.9s;
     }
   }
+
   &_entrees {
     animation: anime-menu-bulle 1s both;
     animation-delay: 0.1s;
   }
   &_plats {
     animation: anime-menu-bulle 1s both;
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
   }
   &_desserts {
     animation: anime-menu-bulle 1s both;
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
   }
 }
 

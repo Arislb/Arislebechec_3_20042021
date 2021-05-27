@@ -8,7 +8,7 @@
   left: 0;
   bottom: 0;
   z-index: 10;
-  background-color: #a19898;
+  background-color: white;
   width: 100%;
   height: 100%;
   animation: stop 3s ease forwards;
@@ -26,7 +26,8 @@
   position: absolute;
   left: 8px;
   width: 16px;
-  background: #cef;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 25%;
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite, stop 3s ease forwards;
 }
 
@@ -36,6 +37,7 @@
 }
 
 .lds-facebook div:nth-child(2) {
+  background: linear-gradient(#9356dc, #ff79da);
   left: 32px;
   animation-delay: -0.12s;
 }
@@ -145,6 +147,12 @@ html {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
   background: linear-gradient(#ff79da, #9356dc);
 }
+.btn:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  /*  box-shadow: 0px 4px 9px rgb(0 0 0 / 15%); */
+  /* box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
 
 .box-restaurants div {
   display: flex;
@@ -194,11 +202,11 @@ html {
 }
 .pop-menu_plats {
   animation: anime-menu-bulle 1s both;
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 .pop-menu_desserts {
   animation: anime-menu-bulle 1s both;
-  animation-delay: 0.5s;
+  animation-delay: 0.6s;
 }
 
 .menu-bulle {
@@ -272,19 +280,19 @@ html {
     opacity: 0;
     transform-origin: 50% bottom;
     transform: scale(0);
-    transform: translateY(2rem);
+    /*  transform: translateY(2rem); */
   }
   70% {
     transform-origin: 50% bottom;
     transform: scaleY(1);
     opacity: 0.8;
-    transform: translateY(0);
+    /* transform: translateY(0); */
   }
   100% {
     opacity: 1;
     transform: scale(1);
     transform-origin: 50% bottom;
-    transform: translateY(0);
+    /* transform: translateY(0); */
   }
 }
 /*----------------------------------------------------Premier-jet------------------------------------------*/

@@ -1,5 +1,10 @@
-@mixin box-shadow {
+@mixin box-shadow($opacity: 15%) {
   /*  box-shadow: 0px 4px 9px rgb(0 0 0 / 15%); */
   /* box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); */
-  box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, $opacity);
+}
+
+@mixin btn-hover {
+  background: $color-button-light;
+  @include box-shadow(25%);
 }

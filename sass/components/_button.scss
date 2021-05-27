@@ -6,7 +6,10 @@
   color: white;
   border: none;
   @include box-shadow;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: $color-button;
+  &:hover {
+    @include btn-hover;
+  }
 }
 
 .box-restaurants {

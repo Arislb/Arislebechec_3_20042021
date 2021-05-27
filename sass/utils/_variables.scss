@@ -3,3 +3,8 @@ $color-secondaire: #ff79da;
 $color-tertiaire: #99e2d0;
 $color-background: #f6f6f6;
 $color-background2: rgb(234, 234, 234);
+$color-button: linear-gradient($color-secondaire, $color-primaire);
+$color-button-light: linear-gradient(
+  lighten($color-secondaire, 5%),
+  lighten($color-primaire, 5%)
+);
