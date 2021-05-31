@@ -435,6 +435,17 @@ ol li i {
   padding-bottom: 3.938rem;
 }
 
+/* ____________________________________________________________________________Breakpoint___________________________________________________________________________ */
+@media screen and (min-width: 1141px) {
+  .tuto-commande ol {
+    display: flex;
+    justify-content: space-around;
+  }
+  .tuto-commande ol li {
+    width: 30%;
+    padding-right: 0.5rem;
+  }
+}
 .main-menu {
   background-color: #f6f6f6;
 }
@@ -490,6 +501,13 @@ ol li i {
   padding-bottom: 3rem;
 }
 
+/* ____________________________________________________________________________Breakpoint ______________________________________________________________________*/
+@media screen and (min-width: 1141px) {
+  .zone-menu {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .boxfooter {
   background-color: #353535;
   color: white;

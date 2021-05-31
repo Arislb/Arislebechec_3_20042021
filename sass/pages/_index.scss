@@ -80,3 +80,17 @@ ol {
   padding: 1.313rem;
   padding-bottom: 3.938rem;
 }
+
+/* ____________________________________________________________________________Breakpoint___________________________________________________________________________ */
+@media screen and (min-width: 1141px) {
+  .tuto-commande {
+    ol {
+      display: flex;
+      justify-content: space-around;
+      li {
+        width: 30%;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
