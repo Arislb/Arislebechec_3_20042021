@@ -44,7 +44,7 @@
 
 .lds-facebook div:nth-child(3) {
   left: 56px;
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 @keyframes lds-facebook {
@@ -350,7 +350,7 @@ html {
   background: linear-gradient(184deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* background-clip: text; */
 }
 
 /*----------------------------------------------------Premier-jet------------------------------------------*/
