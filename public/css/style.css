@@ -138,6 +138,7 @@ html {
 .btn {
   border-radius: 30px;
   width: 12rem;
+  height: 3.125rem;
   padding: 0.8rem;
   margin: 1.5rem;
   color: white;
@@ -372,6 +373,7 @@ html {
   align-items: center;
   width: 90%;
   margin: auto;
+  padding-bottom: 2.8rem;
 }
 .box-information .decouverte p {
   margin: 0;
@@ -483,7 +485,7 @@ ol li i {
 }
 
 .boxfooter {
-  background-color: #5a5a5a;
+  background-color: #353535;
   color: white;
   padding: 1.313rem;
 }
@@ -493,6 +495,7 @@ ol li i {
   letter-spacing: 0.011em;
   font-weight: 300;
   margin: 0;
+  margin-bottom: 1.3rem;
 }
 .boxfooter .boxfooter_nav ul {
   padding: 0;
@@ -502,9 +505,15 @@ ol li i {
   flex-direction: column;
   gap: 0.5rem;
 }
+.boxfooter .boxfooter_nav ul li a {
+  color: white;
+}
 .boxfooter .boxfooter_nav ul li i {
   width: 20px;
   padding-right: 0.5rem;
+}
+.boxfooter .boxfooter_nav ul li :hover {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=style.css.map */
