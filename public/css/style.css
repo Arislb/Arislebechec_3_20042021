@@ -87,6 +87,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.contenu {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contenu main {
+  flex: 1;
+}
+
 .box-header {
   display: flex;
   align-items: center;
@@ -171,25 +180,6 @@ html {
   display: block;
 }
 
-/* .carte {
-  background: white;
-  width: 100%;
-  border-radius: 20px;
-  @include box-shadow;
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 12.5rem;
-    border-radius: 20px 20px 0 0;
-  }
-  figcaption {
-    height: 2.6rem;
-    padding: 1rem;
-    p {
-      margin: 0;
-    }
-  }
-} */
 .pop-menu li:nth-child(1) {
   animation-delay: 0.5s;
 }
@@ -350,7 +340,7 @@ html {
   background: linear-gradient(184deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* background-clip: text; */
+  background-clip: text;
 }
 
 /*----------------------------------------------------Premier-jet------------------------------------------*/
@@ -445,6 +435,19 @@ ol li i {
     width: 30%;
     padding-right: 0.5rem;
   }
+
+  .box-restaurants h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+    max-width: 1440px;
+    margin: auto;
+  }
+  .box-restaurants div {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .main-menu {
   background-color: #f6f6f6;
@@ -506,6 +509,13 @@ ol li i {
   .zone-menu {
     display: flex;
     justify-content: space-around;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .space_btn {
+    padding-top: 3rem;
+    padding-bottom: 0;
   }
 }
 .boxfooter {
@@ -538,6 +548,21 @@ ol li i {
 }
 .boxfooter .boxfooter_nav ul li :hover {
   color: #9356dc;
+}
+
+@media screen and (min-width: 900px) {
+  .boxfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .boxfooter .boxfooter_nav {
+    width: 100%;
+  }
+  .boxfooter .boxfooter_nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

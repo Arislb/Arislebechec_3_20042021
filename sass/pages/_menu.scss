@@ -56,5 +56,10 @@
   .zone-menu {
     display: flex;
     justify-content: space-around;
+    @include centrage;
+  }
+  .space_btn {
+    padding-top: 3rem;
+    padding-bottom: 0;
   }
 }

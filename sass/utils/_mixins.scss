@@ -8,3 +8,8 @@
   background: $color-button-light;
   @include box-shadow(25%);
 }
+
+@mixin centrage {
+  max-width: 1440px;
+  margin: auto;
+}
