@@ -121,6 +121,7 @@ html {
   /*  box-shadow: 0px 4px 9px rgb(0 0 0 / 15%); */
   /* box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease-in-out;
 }
 .carte img {
   object-fit: cover;
@@ -136,6 +137,9 @@ html {
 }
 .carte figcaption p {
   margin: 0;
+}
+.carte:hover {
+  transform: scale(1.02);
 }
 
 .stickers {
